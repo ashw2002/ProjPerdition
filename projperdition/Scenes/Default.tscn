@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://cdpbespvkiaft"]
+
+[ext_resource type="Texture2D" uid="uid://caf4c6qi6dck2" path="res://CamViews/PlaceHolder/Cam1Empty.png" id="1_e1072"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="Control"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+stretch_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="Control/AspectRatioContainer"]
+layout_mode = 2
+texture = ExtResource("1_e1072")
+stretch_mode = 4
